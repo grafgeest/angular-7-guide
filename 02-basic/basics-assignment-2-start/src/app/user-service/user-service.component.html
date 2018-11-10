@@ -1,0 +1,15 @@
+<hr>
+<div class="container">
+  <H4>User Name:</H4>
+  <label>
+    <input type="text" class="form-control" [(ngModel)]="userName">
+  </label>
+  <p>User: {{ userName }}</p>
+  <button
+    type="button"
+    class="btn btn-success"
+    [disabled]="!userName"
+    (click)="onResetUserName()"
+  >Reset UserName</button>
+</div>
+
