@@ -1,0 +1,10 @@
+<hr>
+<button class="btn btn-primary" (click)="onDisplay()">Display Details</button>
+<p *ngIf="isDisplay">Secret Password = {{ password }}</p>
+
+<div *ngFor="let date of output; index as i">
+  <p [style.backgroundColor] = "i > 4 ? 'blue' : ''"
+     [class.t-color] = "i > 4">
+    {{ date }}
+  </p>
+</div>
